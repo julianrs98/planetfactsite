@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">   
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+<body>
+  <header>
+    <div id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="container">
+      <nav class="nav__planets flex flex-jc-sb flex-ai-fe">
+        <a class='mercure' href="index.html">MERCURE</a>
+        <a class='venus' href="venus.html">VENUS</a>
+        <a class='earth' href="earth.html">EARTH</a>
+        <a class='mars' href="mars.html">MARS</a>
+        <a class='jupiter' href="jupiter.html">JUPITER</a>
+        <a class='saturn' href="saturn.html">SATURN</a>
+        <a class='uranus' href="uranus.html">URANUS</a>
+        <a class='neptune' href="neptune.html">NEPTUNE</a>
+      </nav>
+    </div>
+    <div class="nav__mobile">
+      <ul>
+        <li><a href="index.html"><div class="planet--circle mercure"></div>MERCURE</a></li>
+        <li><a href="venus.html"><div class="planet--circle venus"></div>VENUS</a></li>
+        <li><a href="earth.html"><div class="planet--circle earth"></div>EARTH</a></li>
+        <li><a href="mars.html"><div class="planet--circle mars"></div>MARS</a></li>
+        <li><a href="jupiter.html"><div class="planet--circle jupiter"></div>JUPITER</a></li>
+        <li><a href="saturn.html"><div class="planet--circle saturn"></div>SATURN</a></li>
+        <li><a href="uranus.html"><div class="planet--circle uranus"></div>URANUS</a></li>
+        <li><a href="neptune.html"><div class="planet--circle neptune"></div>NEPTUNE</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="nav__info m-row venus">
+      <a class="overview active--mobile">OVERVIEW</a>
+      <a class="structure">STRUCTURE</a>
+      <a class="surface">SURFACE</a>
+  </div>
+  <div class="hero__container">
+    <section class="hero">
+      <div class="desktop__holder">
+          <div class="hero__planet">
+            <div class="hero__image--container">
+              <img src="assets/planet-venus.svg" alt='venus' class='overview hero__image'>
+              <img src="assets/planet-venus-internal.svg" alt='internal-venus' class='structure hero__image invisible'>
+              <img src="assets/planet-venus.svg" class="surface hero__image invisible">
+              <img src="assets/geology-venus.png" alt='venus-geology' class="hero__planet--geo invisible">
+            </div>
+              <p class="hero__planet--details rotation-time">
+                Rotation Time 243 Days
+              </p>
+              <p class="hero__planet--details revolution-time invisible">
+                Revolution Time 224.7 Days
+              </p>
+              <p class="hero__planet--details radius invisible">
+                Radius 6,051.8 KM
+              </p>
+              <p class="hero__planet--details average-temp invisible">
+                Average Temp. 471°c
+              </p>
+          </div>
+          <div class="hero__text m-row">
+            <div class="hero__text--column">
+                <p class="overview">
+                  Venus is the second planet from the Sun. It is named after the 
+                  Roman goddess of love and beauty. As the brightest natural object 
+                  in Earth's night sky after the Moon, Venus can cast shadows and 
+                  can be, on rare occasions, visible to the naked eye in broad daylight.
+                </p>
+                <p class="structure invisible">
+                  The similarity in size and density between Venus and Earth suggests 
+                  they share a similar internal structure: a core, mantle, and crust. 
+                  Like that of Earth, Venusian core is most likely at least partially 
+                  liquid because the two planets have been cooling at about the same rate.
+                </p>
+                <p class="surface invisible">
+                  Much of the Venusian surface appears to have been shaped by volcanic activity. 
+                  Venus has several times as many volcanoes as Earth, and it has 167 large 
+                  volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
+                  of this size on Earth is the Big Island of Hawaii.
+                </p>
+                <span class="hero__wiki">
+                  Source: <a class="hero__wiki__link" href=" https://en.wikipedia.org/wiki/Venus">Wikipedia</a>
+                </span>
+              </div>
+            <div class="hero__buttons details venus">
+              <a href="#" class="overview active active--venus"><span>01 </span>OVERVIEW</a>
+              <a href="#" class="structure"><span>02 </span>STRUCTURE</a>
+              <a href="#" class="surface"><span>03 </span>SURFACE</a>
+            </div>
+          </div>
+        </div>
+          <div class='hero__buttons hero__buttons--bottom venus'>
+            <a class='rotation-time active--venus' href="#">ROTATION TIME</a>
+            <a class='revolution-time' href="#">REVOLUTION TIME</a>
+            <a class="radius" href="#">RADIUS</a>
+            <a class='average-temp' href="#">AVERAGE TEMP.</a>
+          </div>
+    </section>
+  </div>
+<script src="js/script.js"></script>

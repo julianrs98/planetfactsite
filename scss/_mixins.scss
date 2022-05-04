@@ -1,0 +1,67 @@
+//screen sizes
+
+$breakpoint-up: (
+    'tablet': 481px,
+    'desktop': 768px,
+    'large': 1024px,
+);
+
+
+$breakpoint-down: (
+    'mobile': 480px,
+    'tablet': 767px,
+    'desktop': 1023px,
+);
+
+@mixin breakpointup($size) {
+    @media screen and (min-width: map-get($breakpoint-up, $size)) {
+        @content
+    }
+};
+
+@mixin breakpointdown($size) {
+    @media screen and (min-width: map-get($breakpoint-down, $size)) {
+        @content
+    }
+};
+
+
+//coloraizing nav elemets
+
+$nav-color-list: (
+    mercure: #DEF4FC,
+    venus: #F7CC7F,
+    earth: #545BFE,
+    mars: #FF6A45,
+    jupiter: #ECAD7A,
+    saturn: #FCCB6B,
+    uranus: #65F0D5,
+    neptune: #497EFA,
+);
+
+
+
+@mixin nav-border-rainbow {
+    @each $planet, $color in $nav-color-list {
+        .#{$planet} {
+            &:hover {
+            border-top: solid $color;
+            }
+        }
+    }
+}
+
+@mixin nav-background-rainbow {
+    @each $planet, $color in $nav-color-list {
+        .#{$planet} {
+            background-color: $color;
+        }
+    }
+}
+
+
+@mixin accentsColors {
+    @if (active--mercure) {
+        
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">   
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+  <body>
+    <header>
+      <div id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="container">
+        <nav class="nav__planets flex flex-jc-sb flex-ai-fe">
+          <a class='mercure' href="index.html">MERCURE</a>
+          <a class='venus' href="venus.html">VENUS</a>
+          <a class='earth' href="earth.html">EARTH</a>
+          <a class='mars' href="mars.html">MARS</a>
+          <a class='jupiter' href="jupiter.html">JUPITER</a>
+          <a class='saturn' href="saturn.html">SATURN</a>
+          <a class='uranus' href="uranus.html">URANUS</a>
+          <a class='neptune' href="neptune.html">NEPTUNE</a>
+        </nav>
+      </div>
+      <div class="nav__mobile">
+        <ul>
+          <li><a href="index.html"><div class="planet--circle mercure"></div>MERCURE</a></li>
+          <li><a href="venus.html"><div class="planet--circle venus"></div>VENUS</a></li>
+          <li><a href="earth.html"><div class="planet--circle earth"></div>EARTH</a></li>
+          <li><a href="mars.html"><div class="planet--circle mars"></div>MARS</a></li>
+          <li><a href="jupiter.html"><div class="planet--circle jupiter"></div>JUPITER</a></li>
+          <li><a href="saturn.html"><div class="planet--circle saturn"></div>SATURN</a></li>
+          <li><a href="uranus.html"><div class="planet--circle uranus"></div>URANUS</a></li>
+          <li><a href="neptune.html"><div class="planet--circle neptune"></div>NEPTUNE</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="nav__info m-row mercure">
+        <a class="overview active--mercure--mobile">OVERVIEW</a>
+        <a class="structure">STRUCTURE</a>
+        <a class="surface">SURFACE</a>
+    </div>
+    <div class="hero__container">
+      <section class="hero">
+        <div class="desktop__holder">
+            <div class="hero__planet">
+              <div class="hero__image--container">
+                <img src="assets/planet-mercury.svg" alt='mercure' class='overview hero__image'>
+                <img src="assets/planet-mercury-internal.svg" alt='internal-mercure' class='structure hero__image invisible'>
+                <img src="assets/planet-mercury.svg" class="surface hero__image invisible">
+                <img src="assets/geology-mercury.png" alt='mercure-geology' class="hero__planet--geo invisible">
+              </div>
+                <p class="hero__planet--details rotation-time">
+                  Rotation Time: 58.6 Days
+                </p>
+                <p class="hero__planet--details revolution-time invisible">
+                  Revolution Time 87.97 days
+                </p>
+                <p class="hero__planet--details radius invisible">
+                  Radius 2,439.7 KM
+                </p>
+                <p class="hero__planet--details average-temp invisible">
+                  Average temp. 430°C
+                </p>
+            </div>
+            <div class="hero__text m-row">
+              <div class="hero__text--column">
+                  <p class="overview">
+                    Mercury is the smallest planet in the Solar System and the closest
+                    to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
+                    shortest of all the Sun's planets. Mercury is one of four terrestrial
+                    planets in the Solar System, and is a rocky body like Earth.
+                  </p>
+                  <p class="structure invisible">
+                    Mercury appears to have a solid silicate crust and mantle overlying a
+                    solid, iron sulfide outer core layer, a deeper liquid core layer, and
+                    a solid inner core. The planet's density is the second highest in the
+                    Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+                  </p>
+                  <p class="surface invisible">
+                    Mercury's surface is similar in appearance to that of the Moon, showing 
+                    extensive mare-like plains and heavy cratering, indicating that it has 
+                    been geologically inactive for billions of years. It is more heterogeneous 
+                    than either Mars's or the Moon’s.
+                  </p>
+                  <span class="hero__wiki">
+                    Source: <a class="hero__wiki__link" href="https://en.wikipedia.org/wiki/Venus">Wikipedia</a>
+                  </span>
+                </div>
+              <div class="hero__buttons details mercure">
+                <a href="#" class="overview active--mercure"><span>01 </span>OVERVIEW</a>
+                <a href="#" class="structure"><span>02 </span>STRUCTURE</a>
+                <a href="#" class="surface"><span>03 </span>SURFACE</a>
+              </div>
+            </div>
+          </div>
+            <div class='hero__buttons hero__buttons--bottom mercure'>
+              <a class='rotation-time active--mercure' href="#">ROTATION TIME</a>
+              <a class='revolution-time' href="#">REVOLUTION TIME</a>
+              <a class="radius" href="#">RADIUS</a>
+              <a class='average-temp' href="#">AVERAGE TEMP.</a>
+            </div>
+      </section>
+    </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>

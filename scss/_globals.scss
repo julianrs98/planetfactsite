@@ -1,0 +1,99 @@
+
+
+body {
+    background-color: $bg-color;
+    background-image: url("../assets/background-stars.svg");
+    background-repeat: repeat;
+    background-size: 300%;
+}
+
+.container {
+    width: 89%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+// font styles
+
+h1, h2 {
+    font-family: 'Antonio', sans-serif;
+}
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2.6;
+}
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1;
+}
+
+p {
+    font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+}
+
+a {
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+span {
+    font-family: 'Spartan', sans-serif;
+    color: $lightgrey;
+}
+
+//flexbox
+
+.flex {
+    display: flex;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-ai-fe {
+        align-items: flex-end;
+    }
+}
+
+
+//padding
+
+.m-row {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+// buttons
+
+.hero__buttons {
+    a {
+        display: block;
+        color: $lightgrey;
+        border: $darkgrey 0.5px solid;
+    }
+}
+
+
+//js display change
+
+.hero__text--column{
+    .invisible {
+        display: none;
+    }
+}
+
+.invisible {
+    display: none;
+}
